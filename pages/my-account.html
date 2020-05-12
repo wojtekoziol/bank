@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bank</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/my-account.css" />
+        <link rel="stylesheet" href="../css/responsive-style.css" />
+    </head>
+    <body onload="setup()">
+        <nav class="navigation">
+            <a class="navigation-logo" href="my-account.html">
+                <h4>wBank</h4>
+            </a>
+            <ul class="navigation-links">
+                <li>
+                    <a class="navigation-link" href="transfer-money.html">Przelej pieniądze</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="my-account.html">Moje konto</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="log-out.html" onclick="localStorage.removeItem('loggedIndex')">Wyloguj</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page">
+            <h1 class="header">Twoje konto</h1>
+            <ul>
+                <li>Imię:<span class="userData first-name">Nieznane</span></li>
+                <li>Nazwisko:<span class="userData last-name">Nieznane</span></li>
+                <li>Pesel:<span class="userData pesel">Nieznany</span></li>
+                <li>Adres zamieszkania:<span class="userData address">Nieznany</span></li>
+                <li>Numer telefonu:<span class="userData phone-number">Nieznany</span></li>
+                <li>Saldo konta:<span class="userData balance">Nieznane</span></li>
+            </ul>
+            <div class="buttons">
+                <form action="change-data.html">
+                    <input class="button" type="submit" value="Zmień dane" />
+                </form>
+                <form action="change-password.html">
+                    <input class="button" type="submit" value="Zmień hasło" />
+                </form>
+                <input class="button" type="submit" value="Usuń konto" onclick="deleteAccount()" />
+            </div>
+        </div>
+        <script src="../js/app.js"></script>
+        <script src="../js/my-account.js"></script>
+    </body>
+</html>

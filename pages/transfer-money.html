@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bank</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/transfer-money.css" />
+        <link rel="stylesheet" href="../css/responsive-style.css" />
+    </head>
+    <body onload="focusOn('input-name')">
+        <nav class="navigation">
+            <a class="navigation-logo" href="my-account.html">
+                <h4>wBank</h4>
+            </a>
+            <ul class="navigation-links">
+                <li>
+                    <a class="navigation-link" href="transfer-money.html"
+                        >Przelej pieniądze</a
+                    >
+                </li>
+                <li>
+                    <a class="navigation-link" href="my-account.html"
+                        >Moje konto</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="navigation-link"
+                        href="log-out.html"
+                        onclick="localStorage.removeItem('loggedIndex');"
+                        >Wyloguj</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <div class="page">
+            <h1>Wyślij przelew do:</h1>
+            <input
+                class="input-name"
+                type="text"
+                placeholder="imię i nazwisko"
+            />
+            <input
+                class="amount-of-money"
+                type="number"
+                placeholder="ilość pieniędzy"
+            />
+            <input
+                class="send-money-button"
+                type="submit"
+                value="Wyślij"
+                onclick="transferMoney()"
+            />
+            <div class="error-message-container"></div>
+        </div>
+        <script src="../js/app.js"></script>
+        <script src="../js/transfer-money.js"></script>
+    </body>
+</html>

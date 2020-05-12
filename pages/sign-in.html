@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bank</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive-style.css" />
+    </head>
+    <body onload="focusOn('login')">
+        <nav class="navigation">
+            <a class="navigation-logo" href="../index.html">
+                <h4>wBank</h4>
+            </a>
+            <ul class="navigation-links">
+                <li>
+                    <a class="navigation-link" href="about-us.html">O nas</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="sign-up.html">Utwórz konto</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="sign-in.html">Zaloguj się</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page">
+            <h1>Zaloguj się</h1>
+            <ul>
+                <li><input class="login" type="text" placeholder="login" /></li>
+                <li>
+                    <input class="password" type="password" placeholder="hasło" />
+                </li>
+                <li>
+                    <input class="create-account-button" type="submit" value="Zaloguj się" onclick="signIn()" />
+                </li>
+                <li class="error-message-container"></li>
+            </ul>
+        </div>
+        <script src="../js/app.js"></script>
+        <script src="../js/sign-in.js"></script>
+    </body>
+</html>

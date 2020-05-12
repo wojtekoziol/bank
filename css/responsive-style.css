@@ -1,0 +1,41 @@
+@media screen and (max-width: 1300px) {
+    .navigation-links {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navigation-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navigation-links {
+        width: 70%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .navigation {
+        height: 9vh;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .navigation {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .navigation {
+        height: 12vh;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .navigation {
+        height: 13vh;
+    }
+}
