@@ -11,8 +11,16 @@
 }
 
 @media screen and (max-width: 750px) {
+    .navigation-logo {
+        font-size: 18px;
+    }
+
     .navigation-links {
         width: 70%;
+    }
+
+    .navigation-link {
+        font-size: 12px;
     }
 }
 
