@@ -12,10 +12,10 @@ Bank is a basic HTML, CSS and JavaScript project. You can have fun with it prete
 6. Changing personal data
 7. Deleting an account
 
-## Use
+## Usage
 
-Just download this project and open index.html. If you want to delete all created accounts at once press **Clear local storage** on the home page.
+Just download this project and open index.html. If you want to delete all created accounts at once, press **clear local storage** on the home page.
 
 ## Privacy
 
-All data is stored in local storage of your browser so only **you** have access to it.
+All data is stored in local storage of your browser so **only you** have access to it.
